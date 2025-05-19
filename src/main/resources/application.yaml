@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Seguridad-Intermedia
+  security:
+    user:
+      name: emilio
+      password: pass123
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: ''
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      dialect: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: 'true'
+server:
+  port: 8085
