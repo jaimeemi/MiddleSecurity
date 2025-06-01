@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class RolesEntity{
+public class ProductoEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,6 +22,8 @@ public class RolesEntity{
     private Long id;
 
     @Column(nullable = false)
-    private String rol;
+    private String name;
 
+    @Column(nullable = false)
+    private String password;
 }
